@@ -12,7 +12,7 @@ permissions:
   contents: write
   id-token: write
   actions: write
-  packages: read
+  packages: write
 
 jobs:
   deploy:
