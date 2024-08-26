@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.2.1 (2024-08-26)
+
+### Fix
+
+* fix: correct workflow permission ([`2d63ca4`](https://github.com/Siddharth-1698/test-package/commit/2d63ca4cece4662871aa1c950e8f02d97cea2bfc))
+
 ## v0.2.0 (2024-08-26)
 
 ### Feature
