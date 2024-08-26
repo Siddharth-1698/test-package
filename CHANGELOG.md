@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.3.0 (2024-08-26)
+
+### Feature
+
+* feat: update message ([`6215595`](https://github.com/Siddharth-1698/test-package/commit/621559585623f141d134a8c1f3a795f40cd58217))
+
 ## v0.2.2 (2024-08-26)
 
 ### Fix
