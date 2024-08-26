@@ -24,24 +24,23 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.X'
+        python-version: '3.x'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install python-semantic-release setuptools setuptools-scm wheel twine
-    - name: Build and Publish Package
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        python setup.py sdist bdist_wheel
-        twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+        pip install build twine python-semantic-release setuptools-scm
     - name: Run semantic-release
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
       run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
         semantic-release version
-        semantic-release publish 
+        semantic-release publish
+    - name: Build package
+      run: python -m build
+    - name: Publish package to PyPI
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: twine upload dist/*
