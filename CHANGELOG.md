@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.4.0 (2024-08-26)
+
+### Feature
+
+* feat: update message ([`c293e3a`](https://github.com/Siddharth-1698/test-package/commit/c293e3adc5a89d8a33d41bdad8f41f745b62098f))
+
 ## v0.3.0 (2024-08-26)
 
 ### Feature
