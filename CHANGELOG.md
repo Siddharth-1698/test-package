@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.2.2 (2024-08-26)
+
+### Fix
+
+* fix: update workflow ([`5ea1a8e`](https://github.com/Siddharth-1698/test-package/commit/5ea1a8ed2cb7930cf3941d23401ead9a428e3eba))
+
+* fix: update workflow ([`c28c2aa`](https://github.com/Siddharth-1698/test-package/commit/c28c2aa6b1d753f2ac54cd119da05779f20f5b99))
+
 ## v0.2.1 (2024-08-26)
 
 ### Fix
